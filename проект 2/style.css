@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+}
+
+nav {
+    background-color: rgb(220, 225, 229);
+    height: 100%;
+    width: max-content;
+    box-shadow: 5px 0 10px rgb(139, 137, 137);
+    z-index: 1;
+}
+
+nav h3 {
+    padding: 10px 30px;
+}
+
+.nav_new {
+    padding: 20px;
+}
+
+.navDash {
+    display: flex;
+    page-break-inside: 2%;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navDash img {
+    width: 25px;
+    height: 25px;
+}
+
+.white {
+    display: none;
+}
+
+.navDash:hover {
+    background-color: rgb(245, 54, 86);
+    color: white;
+}
+
+.navDash:hover .white {
+    display: block;
+}
+
+.navDash:hover .grey {
+    display: none;
+}
+
+main {
+    background-color: rgb(196, 200, 203);
+    padding: 0 40px;
+}
+
+main h3 {
+    padding: 20px 0;
+    margin-bottom: 50px;
+}
+
+.se1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* ------первая секция на 4 объекта--------- */
+
+.se1>div {
+    background-color: white;
+    padding: 3% 9% 3% 6%;
+    box-shadow: 2px 2px 5px rgb(139, 137, 137);
+    z-index: 1;
+}
+
+.se1_info {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-auto-rows: 80px;
+}
+
+.se1_info img {
+    background-color: rgb(59, 205, 19);
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgb(139, 137, 137);
+    z-index: 1;
+}
+
+.se1_info div:nth-child(2) {
+    text-align: right;
+    width: 100%;
+}
+
+.se1_info .se1Onep1 {
+    font-size: 10pt;
+    color: rgb(92, 94, 93);
+    padding: 10px 0;
+}
+
+.se1_info .se1Onep2 {
+    font-size: 24pt;
+}
+
+
+.se1_info2 {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.se1_info2 img {
+    width: 10px;
+    height: 10px;
+}
+
+.se1_info2 p {
+    font-size: 9pt;
+    color: rgb(92, 94, 93);
+}
+
+/* -------позиционирование 1 блока ------ */
+.se1_info img {
+    position: relative;
+    top: -30px;
+    left: 0px;
+    z-index: 1;
+}
+
+/*------ второй блок 1 схемы------ */
+.se1_info .imgTwo {
+    background-color: rgb(254, 189, 12);
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgb(139, 137, 137);
+    z-index: 1;
+}
+
+/*------ третий блок 1 схемы------ */
+.se1_info .imgThree {
+    background-color: rgb(35, 27, 255);
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgb(139, 137, 137);
+    z-index: 1;
+}
+
+/*------ четвертый блок 1 схемы------ */
+.se1_info .imgFour {
+    background-color: rgb(171, 25, 171);
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgb(139, 137, 137);
+    z-index: 1;
+}
+
+/* ----------2 секция диаграммы---------- */
+.se2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 5%;
+    gap: 20px;
+}
+
+.se2_card {
+    background-color: white;
+    padding: 2% 5%;
+    box-shadow: 2px 2px 5px rgb(139, 137, 137);
+    z-index: 1;
+}
+
+.se2_img {
+    width: 90%;
+    background-color: rgb(59, 205, 19);
+    box-shadow: 2px 2px 5px rgb(139, 137, 137);
+    padding: 20px;
+    position: relative;
+    top: -40px;
+    left: 0px;
+    z-index: 1;
+}
+
+.se2_1 {
+    display: grid;
+    grid-template-rows: 190px;
+    width: 100%;
+    color: rgb(92, 94, 93);
+}
+
+.se2_text p:nth-child(1) {
+    font-size: 20pt;
+    padding: 2% 0;
+}
+
+.se2_text p:nth-child(2) {
+    font-size: 12pt;
+    padding-bottom: 4%;
+}
+
+.se2_textTwo {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.se2_textTwo img {
+    width: 10px;
+    height: 10px;
+}
+
+.se2_textTwo p {
+    font-size: 10pt;
+    color: rgb(92, 94, 93);
+}
+
+.se2_img_orange {
+    width: 90%;
+    background-color: rgb(254, 189, 12);
+    box-shadow: 2px 2px 5px rgb(139, 137, 137);
+    padding: 20px;
+    position: relative;
+    top: -40px;
+    left: 0px;
+    z-index: 1;
+}
+
+.se2_img_blue {
+    width: 90%;
+    background-color: rgb(35, 27, 255);
+    box-shadow: 2px 2px 5px rgb(139, 137, 137);
+    padding: 20px;
+    position: relative;
+    top: -40px;
+    left: 0px;
+    z-index: 1;
+}
+/* ---------3 секция---------- */
+.se3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 5% 0;
+}
+
+.se3>div{
+    background-color: white;
+    box-shadow: 2px 2px 5px rgb(139, 137, 137);
+}
+
+.tasks{
+display: flex;
+align-items: center;
+gap: 5%;
+background-color: rgb(254, 189, 12);
+color: white;
+width: 80%;
+margin: auto;
+padding: 10px 15px;
+position: relative;
+top: -20px;
+}
+
+.tasks span, .tasks div{
+    padding: 10px 15px;
+}
+
+.tasks a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;/* наведение мыши, чтобы был курсор руки */
+}
+
+.tasks div:hover{
+    background-color: rgba(249, 216, 126, 0.92);
+}
+
+.list{
+    padding: 10px 40px;
+}
+
+.list>div{
+display: grid;
+grid-template-columns: 1fr 10fr 1fr 1fr;
+border-bottom: 1px solid silver; 
+padding: 10px 0; 
+gap: 3%;
+}
+
+.list img{
+    width: 20px;
+    height: 20px;
+}
+
+.list input{
+    width: 15px;
+    justify-self: end;
+}
+
+.list>div:nth-child(4){
+    border-bottom: none;
+}
+
+.stats{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(35, 27, 255);
+    color: white;
+    width: 80%;
+    margin: auto;
+    padding: 10px 15px;
+    position: relative;
+    top: -20px;
+}
+
+.stats p:nth-child(1){
+    font-size: 18pt;
+}
+
+.tab{
+    padding: 10px 40px;
+}
+
+.tab>div{
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr 2fr;
+    border-bottom: 1px solid silver; 
+    padding: 10px 0; 
+    gap: 3%;
+}
+
+.tab>div:nth-child(1){
+    color: rgb(7, 162, 185);
+}
+.tab>div:nth-child(5){
+    border-bottom: none;
+}
+/* ----------footer------- */
+footer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+footer div:nth-child(1){
+    justify-self: start;
+    display: flex;
+    gap: 30px;
+    padding: 25px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+footer div:nth-child(2){
+    justify-self: end;
+    align-self: center;
+}
+
