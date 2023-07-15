@@ -1,0 +1,212 @@
+@font-face {
+    font-family: "Nunito";
+    src: url(font/rubik-variablefont_wght-webfont.woff) format("woff"),
+    url(font/rubik-variablefont_wght-webfont.woff2) format("woff2");
+}
+
+* {
+    margin: 0;
+    font-family: Nunito;
+}
+
+body {
+    background-color: rgb(236, 234, 232);
+}
+
+.se1 {
+    background-color: rgb(27, 27, 132);
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.fot_left {
+    padding: 20px 80px;
+    font-size: 25pt;
+}
+
+.fot_right {
+    padding: 20px 80px;
+    justify-self: end;
+    align-self: center;
+}
+
+.radio {
+    display: flex;
+    padding: 20px 80px;
+    gap: 2%;
+}
+
+.radio span {
+    font-size: 14pt;
+}
+
+.se2 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 0 80px;
+    gap: 1%;
+}
+
+.se2 input,
+.se2 select {
+    padding: 10px;
+    font-size: 12pt;
+    border-radius: 10px;
+    border: 1px solid silver;
+}
+
+.me {
+    background-image: url(images/location.svg);
+    background-repeat: no-repeat;
+    background-position: 170px;
+}
+
+.cal {
+    background-image: url(images/calendar.svg);
+    background-repeat: no-repeat;
+    background-position: 170px;
+}
+
+.se2 button {
+    background-color: rgb(27, 27, 132);
+    color: white;
+    font-size: 12pt;
+    border-radius: 10px;
+    border: none;
+}
+
+.se3 {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    padding: 20px 80px;
+    gap: 2%;
+}
+
+.cart1 {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid silver;
+    background-color: white;
+    padding: 30px;
+    gap: 20px;
+    height: max-content;
+}
+
+.text {
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+.cart1 .blue {
+    color: rgb(27, 27, 132);
+    font-weight: bold;
+    font-size: 13pt;
+    padding-bottom: 10px;
+}
+
+.stop {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-size: 13pt;
+}
+
+.price .gr1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.price .gr2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: 2;
+}
+
+.gr2>div {
+    align-self: center;
+}
+
+.gr2 input {
+    padding: 5px;
+    width: 40px;
+}
+
+.gr2 span {
+    padding: 10px;
+}
+
+.airlines {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-size: 13pt;
+}
+
+.cart2 {
+    border-radius: 10px;
+    border: 1px solid silver;
+    background-color: white;
+    width: 100%;
+}
+
+.cart2>div {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.cart2 .text {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+
+}
+
+.cart2 .text2 {
+    background-color: rgb(236, 234, 232);
+    border-bottom: 1px solid silver;
+    border-top: 1px solid silver;
+}
+
+.text2 p {
+    justify-self: center;
+    color: rgb(27, 27, 132);
+    font-size: 13pt;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.info {
+    border-bottom: 1px solid silver;
+}
+
+.info .card {
+    align-self: center;
+    justify-self: center;
+    padding: 20px;
+}
+
+.card .b {
+    font-size: 15pt;
+    padding-bottom: 5px;
+}
+
+.card span {
+    color: rgb(129, 126, 126);
+    font-size: 12pt;
+}
+
+.card button {
+    background-color: rgb(27, 27, 132);
+    padding: 8px 20px;
+    color: white;
+    font-size: 12pt;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 5px;
+}
+
+.card .button {
+    color: rgb(27, 27, 132);
+}
